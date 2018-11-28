@@ -1,0 +1,41 @@
+
+body{width: 100vw;
+     background: black}
+
+span{position: absolute;
+	          top: 50%;
+	          left: 45%;
+	          height: 70px;
+	          width: 10px;
+	          border-radius: 50px;
+	          background: white;
+	          border: 2px solid white;
+	  	      animation: 5s Ami 1s infinite}
+
+
+@-webkit-keyframes Ami{
+
+/*			 0%{transform: translate(0, 100px);}
+			 40%{transform: translate(0, 200px);}
+			 80%{transform: translate(300px, 0) rotate(-90deg)}
+			 100%{transform: translate(0, 400px) rotate(-90deg)}
+			}  */
+
+			  0% {  }
+			  /* haut */
+  40% {
+       transform: translateY(-200%);
+  }
+   /* droite */
+  60% {
+       transform: translateY(-200%) translateX(1000%);
+  }
+  /* bas */
+   80% {transform: translateY(200%) translateX(1000%);
+
+  }
+  /* gauche */
+   100% {
+       transform: translateX(-20%) translateY(200%);
+  }
+}
